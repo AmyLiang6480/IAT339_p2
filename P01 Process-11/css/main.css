@@ -1,0 +1,514 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+/* Adding Custom Font was found on this website
+https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+*/
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Neue Grotesk";
+  src: url(/Font/NeueHaasDisplayBold.ttf);
+  }
+@font-face {
+  font-family: "GT Pressura Mono";
+  src: url(/Font/GT-Pressura-Mono-Medium-Trial.otf);
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+li,
+a {
+    font-family: "Neue Grotesk", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+
+.logo {
+    margin-right: auto;
+}
+
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links li a {
+
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #8F00FF;
+}
+
+
+body {
+  font-family: "Neue Grotesk",sans-serif;
+  padding: 2rem;
+  background-color: #000;
+}
+h1,h2,h3,h4{
+  color: #fff;
+}
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: #fff;
+}
+
+h2 {
+  margin-top: 6rem;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+  font-family: "GT Pressura Mono", sans-serif;
+  color: #fff;
+  width: 50%;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+.heading-p{
+  padding-top: 2em;
+}
+.nav-container{
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+.list-items{
+  list-style-type: none;
+  display: inline-block;
+  
+}
+.heading-list{
+  color:#fff;
+  list-style-type: none;
+}
+a{
+  
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 45px;
+  size: 15px;
+  
+}
+a:hover{
+  size: 20px;
+  color: #A020F0;
+}
+a:focus{
+  color:#686868;
+}
+.logo{
+  font-family: "Neue Grotesk", sans-serif;
+  font-weight: 900;
+  padding-top: 10px;
+  size: 20px;
+  color: #fff;
+}
+
+section{
+  padding: 45px 45px 45px 45px;
+}
+a.submit-btn{
+  display:inline-block;
+  padding:0.5em 3em;
+  border: 0.16em solid #fff;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Neue Grotesk", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  transition: all 0.15s;
+}
+a.submit-btn:hover{
+  color: #8F00FF;
+  border-color:#8F00FF;
+}
+a.submit-btn:active{
+  color: #8F00FF;
+  border-color:#8F00FF;
+}
+label{
+  color: #fff;
+}
+a.reset-btn{
+  display:inline-block;
+  padding:0.5em 3em;
+  border: 0.16em solid #fff;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Neue Grotesk", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  transition: all 0.15s;
+}
+a.reset-btn:hover{
+  color: #8F00FF;
+  border-color:#8F00FF;
+}
+a.reset-btn:active{
+  color: #8F00FF;
+  border-color:#8F00FF;
+}
+li{
+  color: #fff;
+  list-style-type: none;
+}
+ul,li{
+  color:#fff;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button was found on this website
+https://learn.shayhowe.com/html-css/building-forms/
+*/
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+
+}
+
+.service-container h2{
+  color: #fff;
+  padding-left: 8em;
+ 
+  font-family: "Neue Grotesk", sans-serif;
+}
+
+.row{
+  padding-top: 150px;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box{
+  width: 320px;
+  height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 10px;
+}
+.box h3{
+  font-family: "Neue Grotesk", sans-serif;
+  text-align: center;
+  color: #fff;
+
+  background-color: transparent;
+}
+.box li{
+  text-align: left;
+  line-height: 1.2em;
+  
+  padding-left: 65px;
+  font-family: 'GT Pressura Mono', sans-serif;
+  list-style-type: none;
+  color: #fff;
+  background-color: transparent;
+}
+img{
+  padding-top:45px;
+  padding-bottom:45px;
+}
+div{
+ background-color: transparent;
+  padding-bottom: 40px;
+  padding-top: 45px;
+}
+a.add-to-cart-btn{
+  text-align: center;
+  display:inline-block;
+  padding:0.5em 3em;
+  border: 0.16em solid #fff;
+  margin: 2em 0.3em 0.3em 4em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Neue Grotesk", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.15s;
+  background-color: transparent;
+  
+}
+a.add-to-cart-btn-standard{
+  text-align: center;
+  display:inline-block;
+  padding:0.5em 3em;
+  border: 0.16em solid #fff;
+  margin: 3.2em 0.3em 0.3em 4em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Neue Grotesk", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.15s;
+  background-color: transparent;
+}
+a.add-to-cart-btn-business{
+  text-align: center;
+  display:inline-block;
+  padding:0.5em 3em;
+  border: 0.16em solid #fff;
+  margin: 2em 0.3em 0.3em 4em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Neue Grotesk", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.15s;
+  background-color: transparent;
+}
+a.add-to-cart-btn-vip{
+  text-align: center;
+  display:inline-block;
+  padding:0.5em 3em;
+  border: 0.16em solid #fff;
+  margin: 3em 0.3em 5em 4em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Neue Grotesk", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.15s;
+  background-color: transparent;
+}
+a.add-to-cart-btn-standard:hover{
+  color: #8F00FF;
+  border-color:#8F00FF;
+}
+
+a.add-to-cart-btn-business:hover{
+  color: #8F00FF;
+  border-color:#8F00FF;
+}
+
+a.add-to-cart-btn-vip:hover{
+  color: #8F00FF;
+  border-color:#8F00FF;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+/* This sections styling was from https://learn.shayhowe.com/html-css/building-forms/
+provided on canvas
+
+*/
+
+.form input {
+	width: 100%;
+	background: none;
+	border: none;
+	border-bottom: 1px solid rgb(104, 104, 104);
+	outline: none;
+	padding: 20px 20px 20px 0;
+	margin: 0 0px;
+	color: #fff;
+	font-family: "GT Pressura Mono", sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.form-row {
+	display: flex;
+}
+a.add-to-cart-btn-vip{
+    text-align: center;
+    display:inline-block;
+    padding:0.5em 3em;
+    border: 0.16em solid #fff;
+    margin: 3em 0.3em 5em 4em;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Neue Grotesk", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.15s;
+    background-color: transparent;
+  }
+  a.add-to-cart-btn-standard:hover{
+    color: #8F00FF;
+    border-color:#8F00FF;
+  }
+  a.pay-btn{
+    text-align: center;
+    display:inline-block;
+    padding:0.5em 3em;
+    border: 0.16em solid #fff;
+    margin: 2em 0.3em 0.3em 1em;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Neue Grotesk", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.15s;
+    background-color: transparent;
+  }
+  a.return-btn{
+	text-align: center;
+    display:inline-block;
+    padding:0.5em 3em;
+    border: 0.16em solid #fff;
+    margin: 2em 0.3em 0.3em 4em;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Neue Grotesk", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.15s;
+    background-color: transparent;
+  }
+  a.return-btn:hover{
+	color: #8F00FF;
+	border-color:#8F00FF;
+  }
+  a.pay-btn:hover{
+    color: #8F00FF;
+    border-color:#8F00FF;
+  }
+
+  .nav-item{
+    font-family: "GT Pressura Mono", sans-serif;
+  }
+  
+  
+  .header h1 {
+    text-transform: uppercase;
+    font-size: 160px;
+    font-weight: 300;
+    flex-grow: 1;
+  }
+  
+  .ml12 .letter {
+    
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+  .back-btn {
+    color: rgb(104, 104, 104);
+    font-family: "gt pressura mono", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    flex-grow: 2;
+    cursor: pointer;
+  }
+  
+  .price {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-family: "GT Pressura Mono", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    width: 50%;
+  }
+
+  #square-main{
+    width: 80px;
+    height: 80px;
+    border: #fff solid 1px;
+    background-color:#000
+  }
+  #square-support-wh{
+    width: 80px;
+    height: 80px;
+    background-color:#fff
+  }
+  #square-accent{
+    width: 80px;
+    height: 80px;
+    background-color:#8F00FF;
+  }
+  #square-support-grey{
+    width: 80px;
+    height: 80px;
+    background-color:#686868;
+  }
+  
+
