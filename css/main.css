@@ -14,6 +14,10 @@ body {
   color: var(--text-primary-color);
 }
 
+header{
+  text-align: center;
+}
+
 hr {
   border-color: var(--primary-color);
 }
