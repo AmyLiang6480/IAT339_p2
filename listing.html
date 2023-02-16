@@ -6,13 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="/css/variables.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 
 <body>
     <header>
-        <div class="nav container">
+        <nav class="nav">
+            <div class="nav-section">
+                <a class="nav-brand img-link">
+                    <img src="./assets/logo.png" />
+                </a>
+                <a class="text-link">Home</a>
+                <a class="text-link">Explore</a>
+                <a class="text-link">About Us</a>
+            </div>
+            <div class="nav-section" style="flex: 1; max-width: 400px">
+                <div href="#" class="input search">
+                    <input placeholder="Search for record" style="max-width: 400px" id="input" />
+                </div>
+            </div>
+
+            <div class="nav-section nav-buttons">
+                <button class="btn btn-outline">Login</button>
+                <button class="btn btn-primary">Register</button>
+            </div>
+        </nav>
+
+        <!-- <div class="nav container">
             <a href="#" class="logo">Records<img src="" alt=""></a>
             <box-icon name='shopping-bag' id="cart-icon"></box-icon>
             <div class="sidecart">
@@ -37,114 +60,131 @@
                 
                 <i class='bx bx-x' id="close-cart"></i>
             </div>
-        </div>
+        </div> -->
     </header>
-    <section class="product container">
+    <section class="product-container">
         <h2 class="product-heading">Lastest Hits</h2>
         <div class="listing">
             <div class="product-box">
-                <img src="/img/product1.png" alt="" class="product-img">
+                <a href="individual_listing.html"><img src="/img/product1.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/product2.png" alt="" class="product-img">
+                <a href="individual_listing.html"><img src="/img/product2.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/product3.png" alt="" class="product-img">
+                <a href="individual_listing.html"> <img src="/img/product3.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/peoduct4.png" alt="" class="product-img">
+                <a href="individual_listing.html"></a><img src="/img/peoduct4.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/product5.png" alt="" class="product-img">
+                <a href="individual_listing.html"></a><img src="/img/product5.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm ' class="add-to-cart"></i>
+
             </div>
             <div class="product-box">
-                <img src="/img/product6.png" alt="" class="product-img">
+                <a href="individual_listing.html"></a><img src="/img/product6.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/product1.png" alt="" class="product-img">
+                <a href="individual_listing.html"></a><img src="/img/product1.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/product1.png" alt="" class="product-img">
+                <a href="individual_listing.html"></a><img src="/img/product1.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag  bx-sm add-to-cart'></i>
             </div>
-        </div>
+            
     </section>
-    <section class="product container">
-        <h2 class="product-heading">90's Hits</h2>
+    <section class="product-container">
+        <h2 class="product-heading">Lastest Hits</h2>
         <div class="listing">
             <div class="product-box">
-                <img src="/img/product1.png" alt="" class="product-img">
+                <a href="individual_listing.html"><img src="/img/product1.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/product2.png" alt="" class="product-img">
+                <a href="individual_listing.html"><img src="/img/product2.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/product3.png" alt="" class="product-img">
+                <a href="individual_listing.html"> <img src="/img/product3.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/peoduct4.png" alt="" class="product-img">
+                <a href="individual_listing.html"></a><img src="/img/peoduct4.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/product5.png" alt="" class="product-img">
+                <a href="individual_listing.html"></a><img src="/img/product5.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm ' class="add-to-cart"></i>
+
             </div>
             <div class="product-box">
-                <img src="/img/product6.png" alt="" class="product-img">
+                <a href="individual_listing.html"></a><img src="/img/product6.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/product1.png" alt="" class="product-img">
+                <a href="individual_listing.html"></a><img src="/img/product1.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag bx-sm add-to-cart'></i>
             </div>
             <div class="product-box">
-                <img src="/img/product1.png" alt="" class="product-img">
+                <a href="individual_listing.html"></a><img src="/img/product1.png" alt="" class="product-img"></a>
                 <h2 class="product-title">Rock on Rock</h2>
                 <span class="price">$290</span>
-                <box-icon type='solid' name='shopping-bags' class="add-cart"></box-icon>
+                <i class='bx bx-shopping-bag  bx-sm add-to-cart'></i>
             </div>
-        </div>
+            
     </section>
+    
+    <footer class="footer">
+        <div class="footer-section">
+          <a href="" class="text-link">Terms of Use </a>
+          <a href="" class="text-link">Copyright & Trademark Privacy </a>
+          <a href="" class="text-link">Delivery and Payment </a>
+          <a href="" class="text-link">Accessibility </a>
+          <a href="" class="text-link">Cookie Policy </a>
+        </div>
+        <div class="footer-section">
+          <a href="" class="text-link">© Copyright 2023 Company Name</a>
+        </div>
+      </footer>
 
 </body>
 
