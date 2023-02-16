@@ -160,6 +160,7 @@ input {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   font-size: 14px;
+  text-decoration: none;
 }
 
 .btn.large {
@@ -550,9 +551,25 @@ ul.list {
 
 .product-description > h1,
 .product-description > h2,
+.product-description > h3,
 .product-description > p {
   margin: 0;
   padding: 0;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  text-size-adjust: none;
+  margin-bottom: 1rem;
+  max-width: 50vw;
+}
+
+.textarea:hover, .textarea:focus {
+  background-color: var(--secondary-color);
 }
 
 /* Individual Listing End */
@@ -589,6 +606,10 @@ ul.list {
 
   .product-row {
     flex-direction: column;
+  }
+
+  .textarea {
+    max-width: 100vw;
   }
 }
 
