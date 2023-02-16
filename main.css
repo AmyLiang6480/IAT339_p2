@@ -318,7 +318,7 @@ ul.list {
 
 #banner-placeholder {
   height: 400px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-hover);
   color: white;
   display: flex;
   align-items: center;
@@ -521,10 +521,12 @@ ul.list {
   width: 100%;
 }
 .container {
+  position: relative;
   max-width: 100%;
   margin: auto;
   width: 100%;
   padding-top: 5.5rem;
+  z-index: -1;
 }
 .shop {
   margin: top 2rem;
@@ -571,23 +573,23 @@ ul.list {
   font-weight: 500;
 }
 
-box-icon.add-cart {
+.add-cart {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  background: var(--text-color);
-  color: var(--bg-color);
-  padding: 10px;
-  cursor: pointer;
+    bottom: 0;
+    right: 0;
+    background: var(--primary-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
 }
 
 .add-cart:hover {
-  background: var(--main-color);
+  background: var(--primary-color-hover);
   transition: all 0.4s ease;
 }
 
 
-.cart-box {
+/* .cart-box {
   display: grid;
   grid-template-columns: 32% 50% 18%;
   align-items: center;
@@ -670,4 +672,4 @@ box-icon.add-cart {
   font-size: 2rem;
   color: var(--text-color);
   cursor: pointer;
-}
+} */
