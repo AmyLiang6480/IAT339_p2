@@ -513,10 +513,18 @@ ul.list {
     display: none;
   }
 }
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .container {
-  max-width: 1040px;
+  max-width: 100%;
   margin: auto;
   width: 100%;
+  padding-top: 5.5rem;
 }
 .shop {
   margin: top 2rem;
@@ -537,7 +545,7 @@ ul.list {
 
 .listing {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   gap: 1.5rem;
 }
 
