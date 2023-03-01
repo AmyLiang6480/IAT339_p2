@@ -1148,7 +1148,7 @@ span,
   }
 }
 
-section {
+.grid-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -1176,7 +1176,7 @@ section {
 /* Styles for screens 768px and above */
 @media only screen and (min-width: 768px) {
   /* Set the display to flex for the parent section */
-  section {
+  .grid-section {
     display: flex;
     flex-wrap: wrap;
   }
