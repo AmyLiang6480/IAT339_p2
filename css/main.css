@@ -84,6 +84,7 @@ input {
   cursor: pointer;
 }
 
+
 .text-link:hover,
 .text-link:focus {
   /* color: red; */
@@ -525,6 +526,14 @@ form.payment {
 
 .social-media-item img {
   width: 50px;
+}
+
+.social-media-item img:hover{
+  color: var(--primary-color);
+}
+
+#contact{
+  margin-top: 1.25rem;
 }
 
 /* Individual Listing Start */
