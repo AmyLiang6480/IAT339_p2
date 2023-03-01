@@ -354,11 +354,16 @@ form.payment {
 
 #banner-placeholder {
   height: 400px;
-  background-color: var(--primary-color-hover);
+/*  background-color: var(--primary-color-hover);*/
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#banner-placeholder picture{
+  position: absolute;
+  width: 100vw;
 }
 
 #banner-placeholder.small {
