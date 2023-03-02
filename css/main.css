@@ -1405,16 +1405,16 @@ span,
 .item-1 {
   z-index: 2;
   opacity: 1;
-  background-image: url('/img/banner1.png');
+  background-image: url('../img/banner1.png');
 }
 
 .item-2 {
-  background-image: url('/img/banner2.png');
+  background-image: url('../img/banner2.png');
   background-size: cover;
 }
 
 .item-3 {
-  background-image: url('/img/banner3.png');
+  background-image: url('../img/banner3.png');
   background-size: cover;
 }
 
