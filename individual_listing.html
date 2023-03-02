@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>About Us - [Company Name]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/variables.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="nav-section">
+        <a class="nav-brand">
+          <img src="./assets/logo.png" />
+        </a>
+        <a href="./home.html" class="text-link">Home</a>
+        <a href="./listing.html" class="text-link">Explore</a>
+        <a href="./about_us.html" class="text-link">About Us</a>
+      </div>
+      <div class="nav-section" style="flex: 1; max-width: 400px">
+        <div href="#" class="input search">
+          <input
+            placeholder="Search for record"
+            style="max-width: 400px"
+            id="input"
+          />
+        </div>
+      </div>
+      <div class="nav-section nav-buttons">
+        <a href="./checkout_original.html" class="btn btn-primary">My Cart</a>
+        <a href="./index.html" class="btn btn-outline">Style Guide</a>
+      </div>
+    </nav>
+
+    <main id="page-content">
+      <section class="product-row">
+        <a class="img-link">
+          <img src="./assets/product1.webp" />
+        </a>
+        <div class="product-description">
+          <h1 class="h2">Item Title</h1>
+          <h2 class="h3">24.99 CAD</h2>
+          <p class="p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
+            consequat nisl, eleifend pulvinar magna. Curabitur elementum blandit
+            lacus at porta. Orci varius natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Mauris ac mi nibh. Morbi
+            nulla purus, hendrerit vitae dictum id, pellentesque at elit. Donec
+            mauris odio, accumsan quis enim at, dictum lobortis nibh. Praesent
+            finibus velit sodales ligula consequat, ut ullamcorper mauris
+            lacinia. Morbi orci nisi, commodo a tortor eu, mollis egestas nulla.
+            Nulla porttitor non purus nec aliquam.
+          </p>
+          <div class="btns">
+            <button class="btn large btn-block btn-primary">
+              Add to the cart
+            </button>
+            <button class="btn btn-icon">
+              <img src="./assets/icons/heart-plus.svg" />
+            </button>
+          </div>
+
+          <div id="banner-placeholder" class="small secondary">
+            Reviews Summary Section
+          </div>
+
+          <h3 class="h3">Add Review</h3>
+          <form>
+            <textarea
+              class="input textarea"
+              placeholder="Write your review here"
+            ></textarea>
+            <input type="submit" class="btn btn-secondary" value="Submit" />
+          </form>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="h2">Similar Products</h2>
+        <div class="items">
+          <div class="card">
+            <a class="img-link">
+              <img src="./assets/1.webp" />
+            </a>
+            <h3 class="card-title">Title</h3>
+            <p class="p">Some description</p>
+            <p class="p">Price: <span class="pricing">64.99 CAD</span></p>
+            <div>
+              <button class="btn btn-secondary">Add to cart</button>
+              <button class="btn btn-primary">Open</button>
+            </div>
+          </div>
+          <div class="card">
+            <a class="img-link">
+              <img src="./assets/2.webp" />
+            </a>
+            <h3 class="card-title">Title</h3>
+            <p class="p">Some description</p>
+            <p class="p">Price: <span class="pricing">64.99 CAD</span></p>
+            <div>
+              <button class="btn btn-secondary">Add to cart</button>
+              <button class="btn btn-primary">Open</button>
+            </div>
+          </div>
+          <div class="card">
+            <a class="img-link">
+              <img src="./assets/3.webp" />
+            </a>
+            <h3 class="card-title">Title</h3>
+            <p class="p">Some description</p>
+            <p class="p">Price: <span class="pricing">64.99 CAD</span></p>
+            <div>
+              <button class="btn btn-secondary">Add to cart</button>
+              <button class="btn btn-primary">Open</button>
+            </div>
+          </div>
+          <div class="card">
+            <a class="img-link">
+              <img src="./assets/4.webp" />
+            </a>
+            <h3 class="card-title">Title</h3>
+            <p class="p">Some description</p>
+            <p class="p">Price: <span class="pricing">64.99 CAD</span></p>
+            <div>
+              <button class="btn btn-secondary">Add to cart</button>
+              <button class="btn btn-primary">Open</button>
+            </div>
+          </div>
+          <div class="card">
+            <a class="img-link">
+              <img src="./assets/4.webp" />
+            </a>
+            <h3 class="card-title">Title</h3>
+            <p class="p">Some description</p>
+            <p class="p">Price: <span class="pricing">64.99 CAD</span></p>
+            <div>
+              <button class="btn btn-secondary">Add to cart</button>
+              <button class="btn btn-primary">Open</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
