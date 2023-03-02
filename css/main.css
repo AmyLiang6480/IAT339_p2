@@ -84,6 +84,7 @@ input {
   cursor: pointer;
 }
 
+
 .text-link:hover,
 .text-link:focus {
   /* color: red; */
@@ -353,11 +354,16 @@ form.payment {
 
 #banner-placeholder {
   height: 400px;
-  background-color: var(--primary-color-hover);
+/*  background-color: var(--primary-color-hover);*/
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#banner-placeholder picture{
+  position: absolute;
+  width: 100vw;
 }
 
 #banner-placeholder.small {
@@ -525,6 +531,14 @@ form.payment {
 
 .social-media-item img {
   width: 50px;
+}
+
+.social-media-item img:hover{
+  color: var(--primary-color);
+}
+
+#contact{
+  margin-top: 1.25rem;
 }
 
 /* Individual Listing Start */
