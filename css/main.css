@@ -84,7 +84,6 @@ input {
   cursor: pointer;
 }
 
-
 .text-link:hover,
 .text-link:focus {
   /* color: red; */
@@ -355,14 +354,14 @@ form.payment {
 
 #banner-placeholder {
   height: 400px;
-/*  background-color: var(--primary-color-hover);*/
+  /*  background-color: var(--primary-color-hover);*/
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#banner-placeholder picture{
+#banner-placeholder picture {
   position: absolute;
   width: 100vw;
 }
@@ -534,11 +533,11 @@ form.payment {
   width: 50px;
 }
 
-.social-media-item img:hover{
+.social-media-item img:hover {
   color: var(--primary-color);
 }
 
-#contact{
+#contact {
   margin-top: 1.25rem;
 }
 
@@ -1254,7 +1253,6 @@ span,
   }
 }
 
-
 /* Reviews start */
 
 .reviews-container {
@@ -1347,3 +1345,93 @@ span,
 }
 
 /* Reviews end */
+.carousel-wrapper {
+  height: 400px;
+  position: relative;
+  width: 1213px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.arrow-prev {
+  left: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  right: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .arrow,
+  .light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+
+/*Select every element*/
+[id^='item'] {
+  display: none;
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background-image: url('/img/banner1.png');
+}
+
+.item-2 {
+  background-image: url('/img/banner2.png');
+  background-size: cover;
+}
+
+.item-3 {
+  background-image: url('/img/banner3.png');
+  background-size: cover;
+}
+
+*:target ~ .item-1 {
+  opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+
+.spaceing {
+  padding-top: 80px;
+}
