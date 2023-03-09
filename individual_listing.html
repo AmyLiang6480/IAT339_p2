@@ -11,6 +11,7 @@
     />
     <link href="css/variables.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
+    <script type="text/javascript" src="./js/index.js"></script>
   </head>
 
   <body>
@@ -58,7 +59,10 @@
             and "Drown" (featuring Mateus Asato).
           </p>
           <div class="btns">
-            <button class="btn large btn-block btn-primary">
+            <button
+              onclick="addToCart(0)"
+              class="btn large btn-block btn-primary"
+            >
               Add to the cart
             </button>
             <button class="btn btn-icon">
@@ -136,12 +140,22 @@
           </div>
 
           <h3 class="h3">Add Review</h3>
+          <label class="rating-label">
+            <input
+              class="rating"
+              max="5"
+              oninput="this.style.setProperty('--value', this.value)"
+              step="1"
+              type="range"
+              value="1"
+            />
+          </label>
           <form>
             <textarea
               class="input textarea"
               placeholder="Write your review here"
             ></textarea>
-            <input type="submit" class="btn btn-secondary" value="Submit" />
+            <input onclick="submitReview()" type="submit" class="btn btn-primary" value="Submit" />
           </form>
         </div>
       </section>
@@ -162,7 +176,9 @@
             <p class="p">Price: <span class="pricing">27.95 CAD</span></p>
             <div>
               <button class="btn btn-secondary">Add to cart</button>
-              <a href="./individual_listing.html" class="btn btn-primary">Open</a>
+              <a href="./individual_listing.html" class="btn btn-primary"
+                >Open</a
+              >
             </div>
           </div>
           <div class="card">
@@ -177,8 +193,12 @@
             </p>
             <p class="p">Price: <span class="pricing">26.95 CAD</span></p>
             <div>
-              <button class="btn btn-secondary">Add to cart</button>
-              <a href="./individual_listing_2.html" class="btn btn-primary">Open</a>
+              <button onclick="addToCart()" class="btn btn-secondary">
+                Add to cart
+              </button>
+              <a href="./individual_listing_2.html" class="btn btn-primary"
+                >Open</a
+              >
             </div>
           </div>
           <div class="card">
@@ -194,7 +214,9 @@
             <p class="p">Price: <span class="pricing">27.95 CAD</span></p>
             <div>
               <button class="btn btn-secondary">Add to cart</button>
-              <a href="./individual_listing.html" class="btn btn-primary">Open</a>
+              <a href="./individual_listing.html" class="btn btn-primary"
+                >Open</a
+              >
             </div>
           </div>
           <div class="card">
@@ -210,7 +232,9 @@
             <p class="p">Price: <span class="pricing">26.95 CAD</span></p>
             <div>
               <button class="btn btn-secondary">Add to cart</button>
-              <a href="./individual_listing_2.html" class="btn btn-primary">Open</a>
+              <a href="./individual_listing_2.html" class="btn btn-primary"
+                >Open</a
+              >
             </div>
           </div>
         </div>
