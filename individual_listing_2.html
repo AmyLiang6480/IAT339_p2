@@ -11,6 +11,7 @@
     />
     <link href="css/variables.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
+    <script type="text/javascript" src="./js/index.js"></script>
   </head>
 
   <body>
@@ -66,11 +67,11 @@
             all the players on the record." - Brownswood
           </p>
           <div class="btns">
-            <button class="btn large btn-block btn-primary">
+            <button
+              onclick="addToCart(1)"
+              class="btn large btn-block btn-primary"
+            >
               Add to the cart
-            </button>
-            <button class="btn btn-icon">
-              <img src="./assets/icons/heart-plus.svg" />
             </button>
           </div>
 
@@ -144,12 +145,22 @@
           </div>
 
           <h3 class="h3">Add Review</h3>
+          <label class="rating-label">
+            <input
+              class="rating"
+              max="5"
+              oninput="this.style.setProperty('--value', this.value)"
+              step="1"
+              type="range"
+              value="1"
+            />
+          </label>
           <form>
             <textarea
               class="input textarea"
               placeholder="Write your review here"
             ></textarea>
-            <input type="submit" class="btn btn-secondary" value="Submit" />
+            <input onclick="submitReview()" type="submit" class="btn btn-primary" value="Submit" />
           </form>
         </div>
       </section>
