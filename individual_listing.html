@@ -11,6 +11,10 @@
     />
     <link href="css/variables.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/673ff95d11.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="./js/index.js"></script>
   </head>
 
@@ -152,86 +156,97 @@
               class="input textarea"
               placeholder="Write your review here"
             ></textarea>
-            <input onclick="submitReview()" type="submit" class="btn btn-primary" value="Submit" />
+            <input
+              onclick="submitReview()"
+              type="submit"
+              class="btn btn-primary"
+              value="Submit"
+            />
           </form>
         </div>
       </section>
 
       <section class="section">
-        <h2 class="h2">Similar Products</h2>
-        <div class="items">
-          <div class="card">
-            <a href="./individual_listing.html" class="img-link">
-              <img src="./assets/product1.webp" />
-            </a>
-            <h3 class="card-title">New Levels New Devils</h3>
-            <p class="p">
-              For New Levels New Devils, the crew continue honing their
-              synthesis of trap beats, guitar arpeggios, slick bass guitar pops
-              and...
-            </p>
-            <p class="p">Price: <span class="pricing">27.95 CAD</span></p>
-            <div>
-              <button class="btn btn-secondary">Add to cart</button>
-              <a href="./individual_listing.html" class="btn btn-primary"
-                >Open</a
-              >
+        <h2 class="listing-title mpt-0">Similar Products</h2>
+        <div class="grid">
+          <div class="product-info">
+            <a href="individual_listing.html"
+              ><img src="assets/product1.webp" alt=""
+            /></a>
+            <h3 class="product-title">New Levels New Devils</h3>
+            <div class="price-icon">
+              <span class="price">27.95 CAD</span>
+              <i onclick="addToCart(0)" class="fa-solid fa-bag-shopping"></i>
             </div>
           </div>
-          <div class="card">
-            <a href="./individual_listing_2.html" class="img-link">
-              <img src="./assets/product2.webp" />
-            </a>
-            <h3 class="card-title">We Out Here Vinyl 2LP</h3>
-            <p class="p">
-              "A primer on London’s bright-burning young jazz scene, this new
-              compilation brings together a collection of some of its sharpest
-              talents...
-            </p>
-            <p class="p">Price: <span class="pricing">26.95 CAD</span></p>
-            <div>
-              <button onclick="addToCart()" class="btn btn-secondary">
-                Add to cart
-              </button>
-              <a href="./individual_listing_2.html" class="btn btn-primary"
-                >Open</a
-              >
+          <div class="product-info">
+            <a href="individual_listing_2.html"
+              ><img src="assets/product2.webp" alt=""
+            /></a>
+            <h3 class="product-title">We Out Here Vinyl 2LP</h3>
+            <div class="price-icon">
+              <span class="price">26.95 CAD</span>
+              <i onclick="addToCart(1)" class="fa-solid fa-bag-shopping"></i>
             </div>
           </div>
-          <div class="card">
-            <a href="./individual_listing.html" class="img-link">
-              <img src="./assets/product1.webp" />
-            </a>
-            <h3 class="card-title">New Levels New Devils</h3>
-            <p class="p">
-              For New Levels New Devils, the crew continue honing their
-              synthesis of trap beats, guitar arpeggios, slick bass guitar pops
-              and...
-            </p>
-            <p class="p">Price: <span class="pricing">27.95 CAD</span></p>
-            <div>
-              <button class="btn btn-secondary">Add to cart</button>
-              <a href="./individual_listing.html" class="btn btn-primary"
-                >Open</a
-              >
+          <div class="product-info">
+            <a href="individual_listing.html"
+              ><img src="assets/product1.webp" alt=""
+            /></a>
+            <h3 class="product-title">New Levels New Devils</h3>
+            <div class="price-icon">
+              <span class="price">27.95 CAD</span>
+              <i onclick="addToCart(0)" class="fa-solid fa-bag-shopping"></i>
             </div>
           </div>
-          <div class="card">
-            <a href="./individual_listing_2.html" class="img-link">
-              <img src="./assets/product2.webp" />
-            </a>
-            <h3 class="card-title">We Out Here Vinyl 2LP</h3>
-            <p class="p">
-              "A primer on London’s bright-burning young jazz scene, this new
-              compilation brings together a collection of some of its sharpest
-              talents...
-            </p>
-            <p class="p">Price: <span class="pricing">26.95 CAD</span></p>
-            <div>
-              <button class="btn btn-secondary">Add to cart</button>
-              <a href="./individual_listing_2.html" class="btn btn-primary"
-                >Open</a
-              >
+          <div class="product-info">
+            <a href="individual_listing_2.html"
+              ><img src="assets/product2.webp" alt=""
+            /></a>
+            <h3 class="product-title">We Out Here Vinyl 2LP</h3>
+            <div class="price-icon">
+              <span class="price">26.95 CAD</span>
+              <i onclick="addToCart(1)" class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <a href="individual_listing.html"
+              ><img src="assets/product1.webp" alt=""
+            /></a>
+            <h3 class="product-title">New Levels New Devils</h3>
+            <div class="price-icon">
+              <span class="price">27.95 CAD</span>
+              <i onclick="addToCart(0)" class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <a href="individual_listing_2.html"
+              ><img src="assets/product2.webp" alt=""
+            /></a>
+            <h3 class="product-title">We Out Here Vinyl 2LP</h3>
+            <div class="price-icon">
+              <span class="price">26.95 CAD</span>
+              <i onclick="addToCart(1)" class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <a href="individual_listing.html"
+              ><img src="assets/product1.webp" alt=""
+            /></a>
+            <h3 class="product-title">New Levels New Devils</h3>
+            <div class="price-icon">
+              <span class="price">27.95 CAD</span>
+              <i onclick="addToCart(0)" class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <a href="individual_listing_2.html"
+              ><img src="assets/product2.webp" alt=""
+            /></a>
+            <h3 class="product-title">We Out Here Vinyl 2LP</h3>
+            <div class="price-icon">
+              <span class="price">26.95 CAD</span>
+              <i onclick="addToCart(1)" class="fa-solid fa-bag-shopping"></i>
             </div>
           </div>
         </div>

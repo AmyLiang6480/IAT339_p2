@@ -54,11 +54,11 @@ p {
   margin-top: 0;
 }
 
-.au{
+.au {
   margin-left: 2rem;
-  margin-right:2rem;
+  margin-right: 2rem;
 }
-#aboutus{
+#aboutus {
   text-align: center;
 }
 
@@ -336,10 +336,10 @@ ul.list {
 .checkout {
   max-width: 500px;
 }
-form.payment {
+/* form.payment {
   padding-top: 4.5rem;
   padding-left: 4.5rem;
-}
+} */
 .btns-right {
   display: flex;
   gap: 1rem;
@@ -389,8 +389,6 @@ form.payment {
   background-color: var(--secondary-color);
   color: var(--text-primary-color);
 }
-
-
 
 #page-content {
   padding-top: 80px;
@@ -1013,6 +1011,11 @@ img {
   padding-top: 1rem;
 }
 
+.mpt-0 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
 span,
 .price {
   color: rgba(0, 0, 0, 0.6);
@@ -1162,6 +1165,7 @@ span,
 .item-total {
   font-size: 16px;
   margin: 0;
+  padding-top: .5rem;
 }
 
 .cart-total {
@@ -1388,7 +1392,7 @@ span,
   position: relative;
   width: calc(100% - 6rem);
   background-color: var(--primary-color);
-/*  margin: 0 auto;*/
+  /*  margin: 0 auto;*/
   margin-bottom: 1rem;
 }
 
@@ -1476,7 +1480,6 @@ span,
   padding-top: 80px;
 }
 
-
 /* Star Rating Start */
 
 .rating {
@@ -1497,16 +1500,24 @@ span,
   touch-action: manipulation;
   -webkit-appearance: none;
 }
-[dir="rtl"] .rating {
+[dir='rtl'] .rating {
   --dir: left;
 }
 .rating::-moz-range-track {
-  background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+  background: linear-gradient(
+    to var(--dir),
+    var(--fill) 0 var(--x),
+    var(--fillbg) 0 var(--x)
+  );
   block-size: 100%;
   mask: repeat left center/var(--starsize) var(--symbol);
 }
 .rating::-webkit-slider-runnable-track {
-  background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+  background: linear-gradient(
+    to var(--dir),
+    var(--fill) 0 var(--x),
+    var(--fillbg) 0 var(--x)
+  );
   block-size: 100%;
   mask: repeat left center/var(--starsize) var(--symbol);
   -webkit-mask: repeat left center/var(--starsize) var(--symbol);
@@ -1522,7 +1533,8 @@ span,
   width: var(--starsize);
   -webkit-appearance: none;
 }
-.rating, .rating-label {
+.rating,
+.rating-label {
   display: block;
   font-family: ui-sans-serif, system-ui, sans-serif;
 }
@@ -1548,8 +1560,33 @@ span,
   opacity: 1;
   width: 1px;
 }
-[dir="rtl"] .rating--nojs::-webkit-slider-thumb {
+[dir='rtl'] .rating--nojs::-webkit-slider-thumb {
   box-shadow: var(--w) 0 0 var(--w) var(--fill);
 }
 
 /* Star Rating End */
+.checkout-container-new {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.checkout-cart-new,
+.forms-new {
+  flex: 1;
+}
+
+.forms-new {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.checkout-container-new .payment {
+  max-width: 100%;
+}
+
+@media (max-width: 650px) {
+  .checkout-container-new {
+    flex-direction: column;
+  }
+}

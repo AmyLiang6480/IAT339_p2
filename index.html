@@ -35,7 +35,7 @@
         <a class="text-link" href="#text_elements">Text Elements</a>
         <a class="text-link" href="#combined_elements">Combined Elements</a>
         <a class="text-link" href="listing.html">Product Listing Template</a>
-        <a class="text-link" href="checkout.html">Checkout Template</a>
+        <a class="text-link" href="checkout_original.html">Checkout Template</a>
         <a class="text-link" href="#citations">Citations</a>
       </nav>
     </section>
@@ -387,28 +387,32 @@
           </div>
         </div>
       </section>
+    </section>
 
-      <section class="element">
-        <h3 class="h3">Product/Service Listing</h3>
-        <h4 class="h4">Sample code:</h4>
-        <code>
-          &lt;div class="card"&gt;<br />
-          &emsp;&lt;a class="img-link"&gt;<br />
-          &emsp;&emsp;&lt;img src="./assets/1.webp" /&gt;<br />
-          &emsp;&lt;/a&gt;<br />
-          &emsp;&lt;h1 class="h-1"&gt;Title&lt;/h1&gt;<br />
-          &emsp;&lt;p class="p"&gt;Some description&lt;/p&gt;<br />
-          &emsp;&lt;div&gt;<br />
-          &emsp;&emsp;&lt;button class="btn btn-secondary"&gt;Add to
-          cart&lt;/button&gt;<br />
-          &emsp;&emsp;&lt;button class="btn
-          btn-primary"&gt;Open&lt;/button&gt;<br />
-          &emsp;&lt;/div&gt;<br />
-          &lt;/div&gt;
-        </code>
+    <section class="element">
+      <h3 class="h3">Product/Service Listing</h3>
+      <h4 class="h4">Sample code:</h4>
+      <code>
+        &lt;div class="grid"&gt;<br />
+        &emsp;&lt;div class="product-info"&gt;<br />
+        &emsp;&lt;a href="individual_listing.html"&gt;<br />
+        &emsp;&emsp;&lt;img src="./assets/1.webp" /&gt;<br />
+        &emsp;&lt;/a&gt;<br />
+        &emsp;&lt;h3 class="product-title"&gt;Rock on Rocks&lt;/h3&gt;<br />
+        &emsp;&lt;div class="price-icon"&gt$290;<br />
+        &emsp;&lt;span class="price"&gt;<br />
+        &emsp;&lt;/span&gt;<br />
+        &emsp;&lt;/div&gt;<br />
+        &emsp;&lt;i class="fa-solid fa-bag-shopping"&gt;<br />
+        &emsp;&lt;/i&gt;<br />
 
-        <h4 class="h4">Rendered element:</h4>
-        <!-- <div class="card product">
+        &emsp;&lt;/div&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;/div&gt;
+      </code>
+
+      <h4 class="h4">Rendered element:</h4>
+      <!-- <div class="card product">
           <a class="img-link card-section">
             <img src="./assets/1.webp" />
           </a>
@@ -419,112 +423,111 @@
             <button class="btn btn-primary">Open</button>
           </div>
         </div> -->
-        <div class="grid">
-          <div class="product-info">
-            <a href="individual_listing.html"
-              ><img src="img/product1.png" alt=""
-            /></a>
-            <h3 class="product-title">Rock on Rocks</h3>
-            <div class="price-icon">
-              <span class="price">$290</span>
-              <i class="fa-solid fa-bag-shopping"></i>
-            </div>
+      <div class="grid">
+        <div class="product-info">
+          <a href="individual_listing.html"
+            ><img src="img/product1.png" alt=""
+          /></a>
+          <h3 class="product-title">Rock on Rocks</h3>
+          <div class="price-icon">
+            <span class="price">$290</span>
+            <i class="fa-solid fa-bag-shopping"></i>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="element">
-        <h3 class="h3">Payment Form</h3>
-        <h4 class="h4">Sample code:</h4>
-        <code>
-          &lt;form&gt;<br />
-          &emsp;&lt;div class="input"&gt;<br />
-          &emsp;&emsp;&lt;label for="name"&gt;Name on the card&lt;/label&gt;<br />
-          &emsp;&emsp;&lt;input id="name" /&gt;<br />
-          &emsp;&lt;/div&gt;<br />
-          &emsp;&lt;div class="input"&gt;<br />
-          &emsp;&emsp;&lt;label for="number"&gt;Card Number&lt;/label&gt;<br />
-          &emsp;&emsp;&lt;input id="number" /&gt;<br />
-          &emsp;&lt;/div&gt;<br />
-          &emsp;&lt;div class="input"&gt;<br />
-          &emsp;&emsp;&lt;label for="expire"&gt;Expiry Date&lt;/label&gt;<br />
-          &emsp;&emsp;&lt;input id="expire" /&gt;<br />
-          &emsp;&lt;/div&gt;<br />
-          &emsp;&lt;div class="input"&gt;<br />
-          &emsp;&emsp;&lt;label for="csv"&gt;CSV&lt;/label&gt;<br />
-          &emsp;&emsp;&lt;input id="csv" /&gt;<br />
-          &emsp;&lt;/div&gt;<br />
-          &emsp;&lt;button class="btn btn-secondary"&gt;Calcel&lt;/button&gt;<br />
-          &emsp;&lt;button type="submit" class="btn
-          btn-primary"&gt;Submit&lt;/button&gt;<br />
-          &lt;/form&gt;<br />
-        </code>
+    <section class="element">
+      <h3 class="h3">Payment Form</h3>
+      <h4 class="h4">Sample code:</h4>
+      <code>
+        &lt;form&gt;<br />
+        &emsp;&lt;div class="input"&gt;<br />
+        &emsp;&emsp;&lt;label for="name"&gt;Name on the card&lt;/label&gt;<br />
+        &emsp;&emsp;&lt;input id="name" /&gt;<br />
+        &emsp;&lt;/div&gt;<br />
+        &emsp;&lt;div class="input"&gt;<br />
+        &emsp;&emsp;&lt;label for="number"&gt;Card Number&lt;/label&gt;<br />
+        &emsp;&emsp;&lt;input id="number" /&gt;<br />
+        &emsp;&lt;/div&gt;<br />
+        &emsp;&lt;div class="input"&gt;<br />
+        &emsp;&emsp;&lt;label for="expire"&gt;Expiry Date&lt;/label&gt;<br />
+        &emsp;&emsp;&lt;input id="expire" /&gt;<br />
+        &emsp;&lt;/div&gt;<br />
+        &emsp;&lt;div class="input"&gt;<br />
+        &emsp;&emsp;&lt;label for="csv"&gt;CSV&lt;/label&gt;<br />
+        &emsp;&emsp;&lt;input id="csv" /&gt;<br />
+        &emsp;&lt;/div&gt;<br />
+        &emsp;&lt;button class="btn btn-secondary"&gt;Calcel&lt;/button&gt;<br />
+        &emsp;&lt;button type="submit" class="btn
+        btn-primary"&gt;Submit&lt;/button&gt;<br />
+        &lt;/form&gt;<br />
+      </code>
 
-        <h4 class="h4">Rendered element:</h4>
-        <form class="payment">
+      <h4 class="h4">Rendered element:</h4>
+      <form class="payment">
+        <div class="input">
+          <label for="name">Name on the card</label>
+          <input id="name" />
+        </div>
+        <div class="input">
+          <label for="number">Card Number</label>
+          <input id="number" />
+        </div>
+        <div class="row">
           <div class="input">
-            <label for="name">Name on the card</label>
-            <input id="name" />
+            <label for="expire">Expiry Date</label>
+            <input id="expire" />
           </div>
           <div class="input">
-            <label for="number">Card Number</label>
-            <input id="number" />
+            <label for="csv">CSV</label>
+            <input id="csv" />
           </div>
-          <div class="row">
-            <div class="input">
-              <label for="expire">Expiry Date</label>
-              <input id="expire" />
-            </div>
-            <div class="input">
-              <label for="csv">CSV</label>
-              <input id="csv" />
-            </div>
-          </div>
-          <div class="btns-right">
-            <button class="btn btn-secondary">Calcel</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
-      </section>
+        </div>
+        <div class="btns-right">
+          <button class="btn btn-secondary">Calcel</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </section>
 
-      <section class="element">
-        <h3 class="h3">Checkout Cart</h3>
-        <h4 class="h4">Sample code:</h4>
-        <code>
-          &lt;div&gt;<br />
-          &emsp;&lt;ol class="list"&gt;<br />
-          &emsp;&emsp;&lt;li&gt;<br />
-          &emsp;&emsp;&emsp;&lt;h1&gt; class="h-1"&gt;Title 1&lt;/h1&gt;<br />
-          &emsp;&emsp;&emsp;&lt;p&gt; class="p"&gt;Description 1&lt;/p&gt;<br />
-          &emsp;&emsp;&emsp;&lt;div class="input"&gt;<br />
-          &emsp;&emsp;&emsp;&emsp;&lt;label&gt;
-          for="amount-1"&gt;Amount&lt;/label&gt;<br />
-          &emsp;&emsp;&emsp;&emsp;&lt;input id="amount-1" value="1" /&gt;<br />
-          &emsp;&emsp;&emsp;&lt;/div&gt;<br />
-          &emsp;&emsp;&emsp;&lt;button&gt; class="btn
-          btn-secondary"&gt;Remove&lt;/button&gt;<br />
-          &emsp;&emsp;&lt;/li&gt;<br />
-          &emsp;&emsp;&lt;li&gt;<br />
-          &emsp;&emsp;&emsp;&lt;h1&gt; class="h-1"&gt;Title 2&lt;/h1&gt;<br />
-          &emsp;&emsp;&emsp;&lt;p&gt; class="p"&gt;Description 2&lt;/p&gt;<br />
-          &emsp;&emsp;&emsp;&lt;div class="input"&gt;<br />
-          &emsp;&emsp;&emsp;&emsp;&lt;label&gt;
-          for="amount-2"&gt;Amount&lt;/label&gt;<br />
-          &emsp;&emsp;&emsp;&emsp;&lt;input id="amount-2" value="3" /&gt;<br />
-          &emsp;&emsp;&emsp;&lt;/div&gt;<br />
-          &emsp;&emsp;&emsp;&lt;button&gt; class="btn
-          btn-secondary"&gt;Remove&lt;/button&gt;<br />
-          &emsp;&emsp;&lt;/li&gt;<br />
-          &emsp;&lt;/ol&gt;<br />
-          &emsp;&lt;button&gt; class="btn btn-primary"&gt;Proceed to
-          Payment&lt;/button&gt;<br />
-          &lt;/div&gt;<br />
-        </code>
+    <section class="element">
+      <h3 class="h3">Checkout Cart</h3>
+      <h4 class="h4">Sample code:</h4>
+      <code>
+        &lt;div&gt;<br />
+        &emsp;&lt;div class="cart-items"&gt;<br />
+        &lt;div class="item&gt;<br />
+        &lt;img src=assets/product1.webp&gt;<br />
+        &lt;h3&gtItem1<br />
+        &lt;/h3&gt;<br />
+        &lt;p class="price"&gt $10.00<br />
+        &lt;/p&gt;<br />
+        &lt;div class='quantity&gt;<br />
+        &lt;button class=remove-item&gt-<br />
+        &lt;/button&gt;<br />
+        &lt;input type"text" value="1"&gt;<br />
+        &lt;button class="add-item"&gt+<br />
+        &lt;/button&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class="cart-total"&gt;<br />
+        &lt;p&gttotal:<br />
+        &lt;/p&gt;<br />
+        &lt;p class="total-price"&gt$30.00<br />
+        &lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;button class="primary-button"&gtcheckout<br />
+        &lt;/button&gt;<br />
+      </code>
 
-        <h4 class="h4">Rendered element:</h4>
+      <h4 class="h4">Rendered element:</h4>
+    </section>
+    <section class="grid-section">
+      <div class="checkout-cart">
+        <h2>Checkout Cart</h2>
         <div class="cart-items">
           <div class="item">
-            <img src="img/product2.png" alt="Item 1" />
+            <img src="assets/product1.webp" alt="Item 1" />
             <div class="item-details">
               <h3>Item 1</h3>
               <p class="price">$10.00</p>
@@ -537,7 +540,7 @@
             <p class="item-total">$10.00</p>
           </div>
           <div class="item">
-            <img src="img/product3.png" alt="Item 2" />
+            <img src="assets/product2.webp" alt="Item 2" />
             <div class="item-details">
               <h3>Item 2</h3>
               <p class="price">$20.00</p>
@@ -552,7 +555,7 @@
         </div>
         <div class="cart-items">
           <div class="item">
-            <img src="img/product5.png" alt="Item 1" />
+            <img src="assets/product1.webp" alt="Item 1" />
             <div class="item-details">
               <h3>Item 1</h3>
               <p class="price">$10.00</p>
@@ -565,7 +568,7 @@
             <p class="item-total">$10.00</p>
           </div>
           <div class="item">
-            <img src="img/product6.png" alt="Item 2" />
+            <img src="assets/product2.webp" alt="Item 2" />
             <div class="item-details">
               <h3>Item 2</h3>
               <p class="price">$20.00</p>
@@ -574,10 +577,6 @@
                 <input type="text" value="1" />
                 <button class="add-item">+</button>
               </div>
-            </div>
-            <div class="cart-total">
-              <p>Total:</p>
-              <p class="total-price">$30.00</p>
             </div>
             <p class="item-total">$20.00</p>
           </div>
@@ -586,8 +585,9 @@
           <p>Total:</p>
           <p class="total-price">$30.00</p>
         </div>
-        <button class="btn btn-primary"><button>Checkout</button>h4></button>
-      </section>
+
+        <button class="btn btn-primary">checkout</button>
+      </div>
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
@@ -622,6 +622,14 @@
           Turnable Lab. <strong>Product Images</strong>. Retrieved from
           <a class="text-link" href="https://www.turntablelab.com/"
             >https://www.turntablelab.com/</a
+          >
+        </li>
+        <li>
+          Behance.Net <strong>Product Images</strong>. Retrieved from
+          <a
+            class="text-link"
+            href="https://www.behance.net/gallery/53068975/Album-Covers?tracking_source=search_projects%7Cvinyl+album+covers"
+            >https://www.behance.net/gallery/53068975/Album-Covers?tracking_source=search_projects%7Cvinyl+album+covers</a
           >
         </li>
       </ul>
