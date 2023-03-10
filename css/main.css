@@ -364,19 +364,23 @@ form.payment {
   height: 400px;
   color: white;
   display: flex;
+  /*align-items: center;
+  justify-content: center;*/
   flex-direction: row;
   align-items: stretch;
   position: relative;
   flex-wrap: nowrap;
   flex-shrink: 0;
   justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
 }
 
 #banner-placeholder picture {
   position: absolute;
   width: 100vw;
 }
-@
+
 #banner-placeholder.small {
   height: 200px;
 }
@@ -1364,7 +1368,8 @@ span,
   position: relative;
   width: 1213px;
   background-color: var(--primary-color);
-  margin: 0 auto;
+/*  margin: 0 auto;*/
+  margin-bottom: 1rem;
 }
 
 .carousel-item {
